@@ -20,13 +20,14 @@ import admin from './admin';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
+import reportform from './reportform/reportform.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 
 import './app.scss';
 
 angular.module('bikeReportingApp', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap, _Auth,
-  account, admin, 'validation.match', navbar, footer, main, constants, util, ggmaps
+  account, admin, 'validation.match', navbar, footer, main, reportform, ggmaps, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

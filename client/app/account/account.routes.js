@@ -39,5 +39,12 @@ export default function routes($stateProvider) {
       template: '<ggmaps></ggmaps>',
       controller: 'ggmapsComponent',
       controllerAs: 'vm'
+    })
+    .state('reportform', {
+      url: '/reportform',
+      template: require('../reportform/reportform.html'),
+      controller: 'ReportformController',
+      controllerAs: 'rfcontroller',
+      authenticate: true
     });
 }

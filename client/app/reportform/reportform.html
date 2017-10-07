@@ -1,0 +1,33 @@
+
+<h1>E logo, que pasou?</h1>
+
+<form class="form" name="form" ng-submit="rfcontroller.nuevaincidencia(form)" novalidate>
+  <md-input-container>
+    <label>Tipo de incidencia</label>
+    <md-select ng-model="ctrl.userState" class="ng-required" style="min-width:20em">
+      <md-option value="Mecánica"><em>Mecánica</em></md-option>
+      <md-option value="Tráfico">
+        Tráfico
+      </md-option>
+      <md-option value="Pavimento">
+        Pavimento
+      </md-option>
+      <md-option value="Otras">
+        Otras
+      </md-option>
+    </md-select>
+  </md-input-container>
+
+  <div layout-gt-sm="row">
+    <md-input-container class="md-block" style="max-width:60em" flex-gt-sm>
+      <label>Cóntame máis</label>
+      <input ng-model="user.firstName">
+    </md-input-container>
+  </div>
+
+  <div class="example-container">
+    <md-button class="md-primary md-raised" type="submit">Ahí che vai</md-button>
+  </div>
+
+</form>
+
