@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <div class="container" ng-app="myApp" ng-controller="newPlaceCtrl">
+  <div class="container" ng-app="bikeReportingApp" ng-controller="ggmaps">
+
 
     <div class="alert alert-danger text-center" role="alert" ng-show="apiError">
         <b>API Error : </b>
@@ -33,13 +34,10 @@
 
     <div id="map"></div>
 
-
-
-
     <form name="resForm" class="form-horizontal" novalidate
     ng-submit="send()">
         <div class="form-group">
-            <label for="resName" class="col-xs-2 control-label">¿Onde estás?</label>
+            <label for="resName" class="col-xs-2 control-label">Name</label>
             <div class="col-xs-10">
                 <input name="resName" type="text" class="form-control"
                 ng-model="place.name" required />

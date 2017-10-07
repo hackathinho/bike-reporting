@@ -8,6 +8,7 @@ export class ggmapsComponent {
   }
 }
 
+
 export default angular.module('bikeReportingApp.ggmaps', [])
   .component('ggmaps', {
     template: require('./index.html'),
