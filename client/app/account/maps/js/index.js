@@ -1,6 +1,9 @@
+var google = require('angular2-google-maps');
 var app = angular.module('myApp', []);
 var info ;
 var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
+
 app.service('Map', function($q) {
     
         this.cargarPuntos = function(){
@@ -153,3 +156,5 @@ app.controller('newPlaceCtrl', function($scope, Map) {
     
     Map.init();
 });
+
+export default app.name;

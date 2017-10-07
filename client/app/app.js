@@ -9,7 +9,7 @@ import ngSanitize from 'angular-sanitize';
 import uiRouter from 'angular-ui-router';
 import uiBootstrap from 'angular-ui-bootstrap';
 import 'angular-validation-match';
-import ggmaps from './account/ggmaps/ggmaps.component';
+import maps from './account/maps/js';
 import {
   routeConfig
 } from './app.config';
@@ -27,7 +27,7 @@ import util from '../components/util/util.module';
 import './app.scss';
 
 angular.module('bikeReportingApp', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap, _Auth,
-  account, admin, 'validation.match', navbar, footer, main, reportform, ggmaps, constants, util
+  account, admin, 'validation.match', navbar, footer, main, reportform, maps, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

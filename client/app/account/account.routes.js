@@ -36,8 +36,8 @@ export default function routes($stateProvider) {
     })
     .state('maps', {
       url: '/maps',
-      template: '<ggmaps></ggmaps>',
-      controller: 'ggmapsComponent',
+      template: require('./maps/index.html'),
+      controller: 'newPlaceCtrl',
       controllerAs: 'vm'
     })
     .state('reportform', {
