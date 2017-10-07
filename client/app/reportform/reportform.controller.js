@@ -8,6 +8,6 @@ export default class ReportformController {
 
   nuevaincidencia(form){
     console.log('llegué');
-    alert('llegue');
+    alert('Despois non digas que non cho dixen!');
   }
 }
