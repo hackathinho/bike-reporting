@@ -33,5 +33,11 @@ export default function routes($stateProvider) {
       controller: 'SettingsController',
       controllerAs: 'vm',
       authenticate: true
+    })
+    .state('maps', {
+      url: '/maps',
+      template: '<ggmaps></ggmaps>',
+      controller: 'ggmapsComponent',
+      controllerAs: 'vm'
     });
 }
